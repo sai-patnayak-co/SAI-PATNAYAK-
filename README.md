@@ -1,8 +1,10 @@
-<!-- ✨ Professional GitHub Portfolio — Sai Patnayak -->
+<!-- 💼 Sai Patnayak — Professional GitHub Portfolio -->
 
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=500&size=28&duration=4000&pause=800&color=0078FF&center=true&vCenter=true&width=900&lines=👋+Hey!+I'm+Sai+Patnayak;Business+Analyst+%7C+Entrepreneur+%7C+Digital+Strategist;Turning+Ideas+into+Scalable+Business+Solutions;Driven+by+Data,+Design+%26+Creativity" alt="Typing Animation" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=30&duration=4000&pause=800&color=00CFFF&center=true&vCenter=true&width=900&lines=👋+Hey!+I'm+Sai+Patnayak;Business+Analyst+%7C+Entrepreneur+%7C+Digital+Strategist;Turning+Ideas+into+Scalable+Business+Solutions;Driven+by+Data,+Design+%26+Creativity" alt="Typing Animation" />
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0078FF,100:00CFFF&height=120&section=header&text=Welcome+to+My+Portfolio!&fontColor=ffffff&fontSize=25&animation=twinkling" />
 
 </div>
 
@@ -17,12 +19,16 @@ I thrive at the intersection of **business intelligence, creative storytelling, 
 
 ---
 
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0078FF&height=3&section=footer" />
+
 ## 🧭 My Vision  
 
 > “To build businesses that combine logic, creativity, and data —  
 > where every decision tells a story of strategy and innovation.”
 
 ---
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00CFFF&height=3&section=footer" />
 
 ## 💡 Core Strengths  
 
@@ -53,13 +59,15 @@ WordPress | HTML | CSS | Bootstrap | Shopify | WooCommerce | GitHub Pages
 
 ---
 
-## 🧰 Tools & Platforms I Use  
+## 🧰 Tools & Platforms  
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,html,css,wordpress,bootstrap,photoshop,illustrator,canva,figma,powerbi,excel,github,googleads,linkedin,tableau,vscode,notion,shopify,vercel,visualstudio,windows,meta,blender,react,git" />
+  <img src="https://skillicons.dev/icons?i=python,html,css,wordpress,bootstrap,photoshop,illustrator,canva,figma,powerbi,excel,github,googleads,linkedin,tableau,vscode,notion,shopify,vercel,react,windows,meta,git,blender" />
 </p>
 
 ---
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0078FF&height=3&section=footer" />
 
 ## 🎨 Skills Progress  
 
@@ -77,12 +85,12 @@ WordPress | HTML | CSS | Bootstrap | Shopify | WooCommerce | GitHub Pages
 ## 📊 GitHub Analytics  
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=saipatnayak&show_icons=true&theme=tokyonight&count_private=true" height="160" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=saipatnayak&theme=tokyonight" height="160" />
+  <img src="https://github-readme-stats.vercel.app/api?username=saipatnayak&show_icons=true&theme=radical&count_private=true" height="160" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=saipatnayak&theme=radical" height="160" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=saipatnayak&theme=onedark&no-bg=true&row=1&margin-w=10" />
+  <img src="https://github-profile-trophy.vercel.app/?username=saipatnayak&theme=algolia&no-bg=true&row=1&margin-w=10" />
 </p>
 
 ---
@@ -119,13 +127,13 @@ I don’t just analyze — I design business experiences that perform, grow, and
 
 <p align="center">
 <a href="https://www.linkedin.com/in/sai-patnayak" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0078FF?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 <a href="mailto:sai.patnayak@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 <a href="https://github.com/saipatnayak" target="_blank">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-121212?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 <a href="https://sai-patnayak.co" target="_blank">
   <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" />
@@ -134,6 +142,8 @@ I don’t just analyze — I design business experiences that perform, grow, and
 
 ---
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0078FF,100:00CFFF&height=120&section=footer" />
+
 ## ⚡ Fun Fact  
 
 > I mix business analytics with creative design — and turn ideas into measurable success stories.  
@@ -141,3 +151,4 @@ I don’t just analyze — I design business experiences that perform, grow, and
 ⭐ *"Where Business Meets Creativity — That’s My Zone."*  
 
 📍 *Visakhapatnam, Andhra Pradesh, India*
+
