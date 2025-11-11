@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Patnayak - Business Analyst &amp; Digital Marketer</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    
+    html {
+      height: 100%;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+    
+    .btn {
+      transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .skill-badge:hover {
+      transform: scale(1.05);
+    }
+    
+    .skill-bar {
+      height: 8px;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .skill-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      border-radius: 10px;
+      transition: width 1s ease;
+    }
+    
+    .skill-tab {
+      cursor: pointer;
+    }
+    
+    .skill-tab.active {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    
+    .tool-badge {
+      background: rgba(102, 126, 234, 0.1);
+      transition: all 0.2s ease;
+    }
+    
+    .tool-badge:hover {
+      background: rgba(102, 126, 234, 0.2);
+      transform: translateY(-2px);
+    }
+    
+    .contact-input {
+      background: rgba(0, 0, 0, 0.02);
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-input:focus {
+      background: white;
+    }
+    
+    .social-btn {
+      background: rgba(102, 126, 234, 0.1);
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .animate-fade-in {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    .scroll-animate {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    
+    .scroll-animate.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .testimonial-card {
+      animation: scaleIn 0.6s ease forwards;
+    }
+    
+    .testimonial-card:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    
+    .testimonial-card:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    
+    .testimonial-card:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+    
+    .stat-card {
+      animation: scaleIn 0.6s ease forwards;
+    }
+    
+    .stat-card:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    
+    .stat-card:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    
+    .stat-card:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+    
+    .stat-card:nth-child(4) {
+      animation-delay: 0.4s;
+    }
+    
+    .service-card {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+    
+    nav {
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    nav.scrolled {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="min-h-full">
+  <main class="min-h-full"><!-- Navigation -->
+   <nav id="nav" class="px-6 py-4 fixed w-full top-0 z-50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+     <div id="nav-name" class="text-xl font-bold">
+      Sai Patnayak
+     </div>
+     <div class="space-x-6"><a href="#about" class="hover:opacity-80 transition-opacity">About</a> <a href="#experience" class="hover:opacity-80 transition-opacity">Experience</a> <a href="#expertise" class="hover:opacity-80 transition-opacity">Expertise</a> <a href="#testimonials" class="hover:opacity-80 transition-opacity">Testimonials</a> <a href="#services" class="hover:opacity-80 transition-opacity">Services</a> <a href="#contact" class="hover:opacity-80 transition-opacity">Contact</a>
+     </div>
+    </div>
+   </nav><!-- Hero Section -->
+   <section id="hero" class="gradient-bg px-6 py-32 pt-40">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center animate-fade-in">
+      <p id="greeting" class="text-lg mb-2 opacity-90">Hi, I'm Sai Patnayak</p>
+      <h1 id="title" class="text-5xl md:text-6xl font-bold mb-4">Business Analyst &amp; Digital Marketer</h1>
+      <h2 id="tagline" class="text-3xl md:text-4xl font-semibold mb-6">Combining Creative Marketing<br>
+       &amp; Analytical Insights</h2>
+      <p id="hero-description" class="text-xl mb-10 max-w-3xl mx-auto opacity-90">Building impactful campaigns, strengthening brand presence, and accelerating business results through data-driven strategies.</p>
+      <div class="flex flex-wrap justify-center gap-4 mb-16"><button id="cta-work" class="btn px-8 py-3 rounded-full font-semibold">View My Work</button> <button id="cta-resume" class="btn px-8 py-3 rounded-full font-semibold">Download Resume</button> <button id="cta-connect" class="btn px-8 py-3 rounded-full font-semibold">Let's Connect</button>
+      </div><!-- Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+       <div class="stat-card p-6 rounded-xl">
+        <div id="stat1-number" class="text-4xl font-bold mb-2">
+         5+
+        </div>
+        <div id="stat1-label" class="opacity-80">
+         Dashboards Created
+        </div>
+       </div>
+       <div class="stat-card p-6 rounded-xl">
+        <div id="stat2-number" class="text-4xl font-bold mb-2">
+         25%
+        </div>
+        <div id="stat2-label" class="opacity-80">
+         Avg. ROI Increase
+        </div>
+       </div>
+       <div class="stat-card p-6 rounded-xl">
+        <div id="stat3-number" class="text-4xl font-bold mb-2">
+         3+
+        </div>
+        <div id="stat3-label" class="opacity-80">
+         Years Experience
+        </div>
+       </div>
+       <div class="stat-card p-6 rounded-xl">
+        <div id="stat4-number" class="text-4xl font-bold mb-2">
+         15+
+        </div>
+        <div id="stat4-label" class="opacity-80">
+         Happy Clients
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Section -->
+   <section id="about" class="px-6 py-20">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-12">
+      <h3 id="about-heading" class="text-4xl font-bold mb-3">About Me</h3>
+      <p id="about-subheading" class="text-xl opacity-70">Driving Results Through Data &amp; Creativity</p>
+     </div>
+     <div class="grid md:grid-cols-2 gap-12 items-start">
+      <div class="space-y-6">
+       <p id="about-p1" class="text-lg leading-relaxed">I'm Sai Patnayak, a motivated and detail-oriented Business Analyst and Digital Marketer based in Visakhapatnam, India. With strong experience in data analytics, marketing strategy, and business communication, I specialize in transforming complex data into actionable insights.</p>
+       <p id="about-p2" class="text-lg leading-relaxed">Skilled in Power BI, Excel, SQL, Tableau, Google Analytics, Canva, and Photoshop to deliver impactful business reports and creative marketing assets. Proficient in Python (Basic) and business tools like Jira and Microsoft Office, with the ability to analyze data, create reports, manage campaigns, and write effective content.</p>
+       <p id="about-p3" class="text-lg leading-relaxed">Currently pursuing B.Com (Computer Science) from Andhra University alongside CA and CMA Foundation, I bring a unique blend of analytical rigor and creative marketing prowess to every project. Adept at business strategy development, email and Canva marketing, research analytics, and copywriting to drive measurable results.</p>
+       <p id="about-p4" class="text-lg leading-relaxed">Focused on using data, creativity, and business strategy to drive digital transformation and measurable business growth. My objective is to combine creative marketing strategies and analytical insights to build impactful campaigns, strengthen brand presence, and accelerate business results.</p><button class="btn px-8 py-3 rounded-full font-semibold mt-4">Download Full Resume</button>
+      </div>
+      <div class="grid grid-cols-2 gap-6">
+       <div class="card p-6 rounded-xl">
+        <div class="text-3xl mb-3">
+         🧩
+        </div>
+        <h4 id="highlight1-title" class="text-xl font-bold mb-2">Business Analysis</h4>
+        <p id="highlight1-desc" class="text-sm opacity-80">Requirement gathering, process mapping, KPI tracking</p>
+       </div>
+       <div class="card p-6 rounded-xl">
+        <div class="text-3xl mb-3">
+         📊
+        </div>
+        <h4 id="highlight2-title" class="text-xl font-bold mb-2">Data Analytics</h4>
+        <p id="highlight2-desc" class="text-sm opacity-80">Power BI, Tableau, SQL, Excel, Python</p>
+       </div>
+       <div class="card p-6 rounded-xl">
+        <div class="text-3xl mb-3">
+         📈
+        </div>
+        <h4 id="highlight3-title" class="text-xl font-bold mb-2">Digital Marketing</h4>
+        <p id="highlight3-desc" class="text-sm opacity-80">SEO, Social Media, Email Marketing, Canva</p>
+       </div>
+       <div class="card p-6 rounded-xl">
+        <div class="text-3xl mb-3">
+         💼
+        </div>
+        <h4 id="highlight4-title" class="text-xl font-bold mb-2">Strategic Thinking</h4>
+        <p id="highlight4-desc" class="text-sm opacity-80">Business planning, leadership, stakeholder engagement</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Experience Section -->
+   <section id="experience" class="px-6 py-20">
+    <div class="max-w-6xl mx-auto">
+     <div class="grid md:grid-cols-3 gap-8">
+      <div class="card p-8 rounded-xl">
+       <div class="text-4xl mb-4">
+        💼
+       </div>
+       <h4 id="exp-title" class="text-2xl font-bold mb-3">Professional Experience</h4>
+       <p id="exp-desc" class="opacity-80">Freelance Business Analyst &amp; Digital Marketer serving SMEs, startups, and e-commerce clients</p>
+      </div>
+      <div class="card p-8 rounded-xl">
+       <div class="text-4xl mb-4">
+        🎓
+       </div>
+       <h4 id="edu-title" class="text-2xl font-bold mb-3">Education</h4>
+       <p id="edu-desc" class="opacity-80">B.Com (Computer Science) - Andhra University (2022-2026)<br><br>
+        CA Foundation - ICAI | CMA Foundation - ICMAI<br><br>
+        Higher Secondary (MPC + CS) - Kendriya Vidyalaya Waltair (75%)</p>
+      </div>
+      <div class="card p-8 rounded-xl">
+       <div class="text-4xl mb-4">
+        🏆
+       </div>
+       <h4 id="cert-title" class="text-2xl font-bold mb-3">Certifications</h4>
+       <p id="cert-desc" class="opacity-80">Tata GenAI Data Analytics | Digital Marketing - Tech Mahindra | Google Analytics | IIT Hyderabad Entrepreneurship</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Expertise Section -->
+   <section id="expertise" class="px-6 py-20">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-12">
+      <h3 id="expertise-heading" class="text-4xl font-bold mb-3">Expertise</h3>
+      <p id="expertise-subheading" class="text-xl opacity-70">Skills &amp; Competencies</p>
+      <p id="expertise-description" class="text-lg opacity-60 mt-2">Comprehensive skill set spanning digital marketing channels and advanced business analytics tools</p>
+     </div><!-- Skill Categories Tabs -->
+     <div class="flex justify-center gap-4 mb-12 flex-wrap"><button id="tab-digital" class="skill-tab active px-6 py-3 rounded-full font-semibold transition-all">Digital Marketing</button> <button id="tab-business" class="skill-tab px-6 py-3 rounded-full font-semibold transition-all">Business Analysis</button> <button id="tab-tools" class="skill-tab px-6 py-3 rounded-full font-semibold transition-all">Tools &amp; Platforms</button>
+     </div><!-- Digital Marketing Skills -->
+     <div id="skills-digital" class="skills-content">
+      <h4 class="text-2xl font-bold mb-6 text-center">Digital Marketing - 16 Core Skills</h4>
+      <div class="grid md:grid-cols-2 gap-6">
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">SEO &amp; SEM</span> <span class="opacity-70">95%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 95%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">PPC Advertising</span> <span class="opacity-70">90%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 90%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Google Ads</span> <span class="opacity-70">92%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 92%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Facebook Ads</span> <span class="opacity-70">88%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 88%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">LinkedIn Ads</span> <span class="opacity-70">85%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 85%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Social Media Marketing</span> <span class="opacity-70">90%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 90%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Content Marketing</span> <span class="opacity-70">87%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 87%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Email Marketing</span> <span class="opacity-70">93%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 93%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Marketing Automation</span> <span class="opacity-70">85%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 85%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Google Analytics</span> <span class="opacity-70">95%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 95%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Conversion Optimization</span> <span class="opacity-70">88%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 88%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">A/B Testing</span> <span class="opacity-70">90%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 90%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Marketing Strategy</span> <span class="opacity-70">92%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 92%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Brand Management</span> <span class="opacity-70">85%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 85%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Influencer Marketing</span> <span class="opacity-70">80%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 80%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Affiliate Marketing</span> <span class="opacity-70">82%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 82%"></div>
+        </div>
+       </div>
+      </div>
+     </div><!-- Business Analysis Skills -->
+     <div id="skills-business" class="skills-content hidden">
+      <h4 class="text-2xl font-bold mb-6 text-center">Business Analysis - 16 Core Skills</h4>
+      <div class="grid md:grid-cols-2 gap-6">
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Data Analysis</span> <span class="opacity-70">95%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 95%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">SQL &amp; Database</span> <span class="opacity-70">90%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 90%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Excel Advanced</span> <span class="opacity-70">95%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 95%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Tableau</span> <span class="opacity-70">88%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 88%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Power BI</span> <span class="opacity-70">90%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 90%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Google Data Studio</span> <span class="opacity-70">87%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 87%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Statistical Analysis</span> <span class="opacity-70">85%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 85%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Requirements Gathering</span> <span class="opacity-70">90%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 90%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Process Mapping</span> <span class="opacity-70">88%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 88%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Market Research</span> <span class="opacity-70">92%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 92%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Competitive Analysis</span> <span class="opacity-70">90%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 90%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Business Intelligence</span> <span class="opacity-70">87%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 87%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">KPI Tracking</span> <span class="opacity-70">93%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 93%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">SWOT Analysis</span> <span class="opacity-70">88%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 88%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Stakeholder Management</span> <span class="opacity-70">85%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 85%"></div>
+        </div>
+       </div>
+       <div class="skill-item">
+        <div class="flex justify-between mb-2"><span class="font-semibold">Agile/Scrum</span> <span class="opacity-70">80%</span>
+        </div>
+        <div class="skill-bar">
+         <div class="skill-fill" style="width: 80%"></div>
+        </div>
+       </div>
+      </div>
+     </div><!-- Tools & Platforms -->
+     <div id="skills-tools" class="skills-content hidden">
+      <h4 class="text-2xl font-bold mb-6 text-center">Tools &amp; Platforms</h4>
+      <div class="mb-8">
+       <h5 class="text-lg font-semibold mb-4 text-center opacity-80">AI &amp; Productivity Tools</h5>
+       <div class="flex flex-wrap gap-3 justify-center"><span class="tool-badge px-5 py-3 rounded-full font-medium">ChatGPT</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Google Gemini</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Perplexity AI</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Grammarly</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Google Workspace</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Microsoft Office Suite</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Zoom</span>
+       </div>
+      </div>
+      <div class="mb-8">
+       <h5 class="text-lg font-semibold mb-4 text-center opacity-80">Analytics &amp; Data Tools</h5>
+       <div class="flex flex-wrap gap-3 justify-center"><span class="tool-badge px-5 py-3 rounded-full font-medium">Google Analytics</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Google Tag Manager</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Tableau</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Power BI</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Excel</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">SQL</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Python</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Google Data Studio</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Looker</span>
+       </div>
+      </div>
+      <div class="mb-8">
+       <h5 class="text-lg font-semibold mb-4 text-center opacity-80">Marketing &amp; Advertising</h5>
+       <div class="flex flex-wrap gap-3 justify-center"><span class="tool-badge px-5 py-3 rounded-full font-medium">Google Ads</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Facebook Business Manager</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">HubSpot</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Mailchimp</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">SEMrush</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Ahrefs</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Hootsuite</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Buffer</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Canva</span>
+       </div>
+      </div>
+      <div>
+       <h5 class="text-lg font-semibold mb-4 text-center opacity-80">Project Management &amp; Development</h5>
+       <div class="flex flex-wrap gap-3 justify-center"><span class="tool-badge px-5 py-3 rounded-full font-medium">JIRA</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Trello</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Salesforce</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">WordPress</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Shopify</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">WooCommerce</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Zapier</span> <span class="tool-badge px-5 py-3 rounded-full font-medium">Figma</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Testimonials Section -->
+   <section id="testimonials" class="px-6 py-20">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-12">
+      <h3 id="testimonials-heading" class="text-4xl font-bold mb-3">Testimonials</h3>
+      <p id="testimonials-subheading" class="text-xl opacity-70">Client Success Stories</p>
+      <p id="testimonials-description" class="text-lg opacity-60 mt-2">Hear what my clients say about working together</p>
+     </div>
+     <div class="grid md:grid-cols-3 gap-8">
+      <div class="testimonial-card card p-8 rounded-xl">
+       <div class="flex items-center mb-4">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center text-3xl mr-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+         👨‍💼
+        </div>
+        <div>
+         <h5 class="font-bold text-lg">Rajesh Kumar</h5>
+         <p class="text-sm opacity-70">CEO, TechStart Solutions</p>
+        </div>
+       </div>
+       <div class="text-yellow-500 text-2xl mb-3">
+        ⭐⭐⭐⭐⭐
+       </div>
+       <p class="opacity-80 italic">"Sai's data analytics expertise helped us increase our ROI by 35%. His Power BI dashboards transformed how we make business decisions. Highly recommended!"</p>
+      </div>
+      <div class="testimonial-card card p-8 rounded-xl">
+       <div class="flex items-center mb-4">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center text-3xl mr-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+         👩‍💼
+        </div>
+        <div>
+         <h5 class="font-bold text-lg">Priya Sharma</h5>
+         <p class="text-sm opacity-70">Marketing Director, E-Shop India</p>
+        </div>
+       </div>
+       <div class="text-yellow-500 text-2xl mb-3">
+        ⭐⭐⭐⭐⭐
+       </div>
+       <p class="opacity-80 italic">"Our digital marketing campaigns saw a 50% improvement in engagement after working with Sai. His strategic approach and creative execution are exceptional."</p>
+      </div>
+      <div class="testimonial-card card p-8 rounded-xl">
+       <div class="flex items-center mb-4">
+        <div class="w-16 h-16 rounded-full flex items-center justify-center text-3xl mr-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+         👨‍💻
+        </div>
+        <div>
+         <h5 class="font-bold text-lg">Amit Patel</h5>
+         <p class="text-sm opacity-70">Founder, GrowthHub</p>
+        </div>
+       </div>
+       <div class="text-yellow-500 text-2xl mb-3">
+        ⭐⭐⭐⭐⭐
+       </div>
+       <p class="opacity-80 italic">"Sai's business analysis skills are top-notch. He identified key growth opportunities we had missed and helped us scale efficiently. A true professional!"</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Services Section -->
+   <section id="services" class="px-6 py-20">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-12">
+      <h3 id="services-heading" class="text-4xl font-bold mb-3">Services</h3>
+      <p id="services-subheading" class="text-xl opacity-70">What I Offer</p>
+      <p id="services-description" class="text-lg opacity-60 mt-2">Comprehensive digital marketing and business analysis services tailored to your growth objectives</p>
+     </div>
+     <div class="mb-16">
+      <h4 class="text-2xl font-bold mb-8 text-center">Digital Marketing</h4>
+      <div class="grid md:grid-cols-2 gap-8">
+       <div class="service-card card p-8 rounded-xl">
+        <div class="text-4xl mb-4">
+         🔍
+        </div>
+        <h5 id="service1-title" class="text-2xl font-bold mb-3">SEO Optimization</h5>
+        <p id="service1-desc" class="opacity-80">Boost organic traffic with strategic keyword research, on-page optimization, and technical SEO improvements.</p>
+       </div>
+       <div class="service-card card p-8 rounded-xl">
+        <div class="text-4xl mb-4">
+         💰
+        </div>
+        <h5 id="service2-title" class="text-2xl font-bold mb-3">PPC Campaigns</h5>
+        <p id="service2-desc" class="opacity-80">Drive qualified leads through optimized Google Ads, social media advertising, and conversion-focused landing pages.</p>
+       </div>
+       <div class="service-card card p-8 rounded-xl">
+        <div class="text-4xl mb-4">
+         📱
+        </div>
+        <h5 id="service3-title" class="text-2xl font-bold mb-3">Social Media Marketing</h5>
+        <p id="service3-desc" class="opacity-80">Build engaged communities and increase brand awareness across Facebook, Instagram, LinkedIn, and Twitter.</p>
+       </div>
+       <div class="service-card card p-8 rounded-xl">
+        <div class="text-4xl mb-4">
+         📧
+        </div>
+        <h5 id="service4-title" class="text-2xl font-bold mb-3">Email Marketing</h5>
+        <p id="service4-desc" class="opacity-80">Nurture leads and retain customers with personalized email campaigns that drive conversions.</p>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h4 class="text-2xl font-bold mb-8 text-center">Business Analysis</h4>
+      <div class="grid md:grid-cols-2 gap-8">
+       <div class="service-card card p-8 rounded-xl">
+        <div class="text-4xl mb-4">
+         📊
+        </div>
+        <h5 id="service5-title" class="text-2xl font-bold mb-3">Data Analytics</h5>
+        <p id="service5-desc" class="opacity-80">Transform raw data into actionable insights using advanced analytics tools and visualization techniques.</p>
+       </div>
+       <div class="service-card card p-8 rounded-xl">
+        <div class="text-4xl mb-4">
+         🔬
+        </div>
+        <h5 id="service6-title" class="text-2xl font-bold mb-3">Market Research</h5>
+        <p id="service6-desc" class="opacity-80">Understand your market landscape, competitor strategies, and customer behaviors to make informed decisions.</p>
+       </div>
+       <div class="service-card card p-8 rounded-xl">
+        <div class="text-4xl mb-4">
+         💡
+        </div>
+        <h5 id="service7-title" class="text-2xl font-bold mb-3">Business Intelligence</h5>
+        <p id="service7-desc" class="opacity-80">Implement BI solutions that provide real-time visibility into key performance metrics and trends.</p>
+       </div>
+       <div class="service-card card p-8 rounded-xl">
+        <div class="text-4xl mb-4">
+         📈
+        </div>
+        <h5 id="service8-title" class="text-2xl font-bold mb-3">Performance Tracking</h5>
+        <p id="service8-desc" class="opacity-80">Monitor campaign performance, identify optimization opportunities, and measure ROI across all channels.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="px-6 py-20">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-12">
+      <h3 id="contact-heading" class="text-4xl font-bold mb-3">Contact</h3>
+      <p id="contact-subheading" class="text-xl opacity-70">Let's Work Together</p>
+      <p id="contact-description" class="text-lg opacity-60 mt-2">Ready to transform your digital presence? Let's discuss how we can achieve your business goals.</p>
+     </div>
+     <div class="grid md:grid-cols-2 gap-12"><!-- Contact Form -->
+      <div class="card p-8 rounded-xl">
+       <form id="contact-form">
+        <div class="mb-6"><label for="name" class="block font-semibold mb-2">Your Name *</label> <input type="text" id="name" name="name" required class="contact-input w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-opacity-50 transition-colors" placeholder="John Doe">
+        </div>
+        <div class="mb-6"><label for="email" class="block font-semibold mb-2">Email Address *</label> <input type="email" id="email" name="email" required class="contact-input w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-opacity-50 transition-colors" placeholder="john@example.com">
+        </div>
+        <div class="mb-6"><label for="subject" class="block font-semibold mb-2">Subject</label> <input type="text" id="subject" name="subject" class="contact-input w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-opacity-50 transition-colors" placeholder="Project Inquiry">
+        </div>
+        <div class="mb-6"><label for="message" class="block font-semibold mb-2">Message *</label> <textarea id="message" name="message" required rows="5" class="contact-input w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:border-opacity-50 transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+        </div><button type="submit" id="submit-btn" class="btn w-full py-4 rounded-lg font-semibold text-lg">Send Message</button>
+       </form>
+      </div><!-- Contact Info -->
+      <div class="space-y-8">
+       <div class="card p-8 rounded-xl">
+        <h4 class="text-xl font-bold mb-4">Get In Touch</h4>
+        <div class="space-y-4">
+         <div class="flex items-start gap-3">
+          <div class="text-2xl">
+           📧
+          </div>
+          <div>
+           <div class="font-semibold mb-1">
+            Email
+           </div>
+           <div id="contact-email" class="opacity-80">
+            sai.patnayak@example.com
+           </div>
+          </div>
+         </div>
+         <div class="flex items-start gap-3">
+          <div class="text-2xl">
+           ⏱️
+          </div>
+          <div>
+           <div class="font-semibold mb-1">
+            Response Time
+           </div>
+           <div id="contact-response" class="opacity-80">
+            Within 24 hours
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="card p-8 rounded-xl">
+        <h4 class="text-xl font-bold mb-4">Connect With Me</h4>
+        <div class="flex gap-4 mb-6"><button class="social-btn w-12 h-12 rounded-full flex items-center justify-center text-xl transition-transform hover:scale-110">💼</button> <button class="social-btn w-12 h-12 rounded-full flex items-center justify-center text-xl transition-transform hover:scale-110">🐦</button> <button class="social-btn w-12 h-12 rounded-full flex items-center justify-center text-xl transition-transform hover:scale-110">📘</button> <button class="social-btn w-12 h-12 rounded-full flex items-center justify-center text-xl transition-transform hover:scale-110">📸</button>
+        </div>
+        <p class="text-sm opacity-70">Click to connect on social media</p>
+       </div>
+       <div class="card p-8 rounded-xl">
+        <h4 class="text-xl font-bold mb-3">Download My Resume</h4>
+        <p class="opacity-80 mb-4">Get a comprehensive overview of my skills, experience, and achievements in digital marketing and business analysis.</p><button class="btn w-full py-3 rounded-lg font-semibold">Download Resume</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer id="footer" class="px-6 py-12 text-center">
+    <div class="max-w-6xl mx-auto">
+     <h3 class="text-3xl font-bold mb-4">Let's Work Together</h3>
+     <p class="text-lg mb-6 opacity-80">Ready to transform your business with data-driven insights?</p><button class="btn px-8 py-3 rounded-full font-semibold mb-8">Get In Touch</button>
+     <p class="opacity-60">© 2024 Sai Patnayak. All rights reserved.</p>
+    </div>
+   </footer>
+  </main>
+  <script>
+    const defaultConfig = {
+      background_color: "#667eea",
+      surface_color: "#ffffff",
+      text_color: "#1a202c",
+      primary_action_color: "#ffffff",
+      secondary_action_color: "#f7fafc",
+      font_family: "system-ui",
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const bgColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const primaryActionColor = config.primary_action_color || defaultConfig.primary_action_color;
+      const secondaryActionColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+      const fontFamily = config.font_family || defaultConfig.font_family;
+      const fontSize = config.font_size || defaultConfig.font_size;
+
+      // Apply colors
+      document.body.style.backgroundColor = surfaceColor;
+      document.body.style.color = textColor;
+      
+      const nav = document.getElementById('nav');
+      nav.style.backgroundColor = `${surfaceColor}dd`;
+      nav.style.color = textColor;
+      
+      const hero = document.getElementById('hero');
+      hero.style.background = `linear-gradient(135deg, ${bgColor} 0%, ${adjustColor(bgColor, -20)} 100%)`;
+      hero.style.color = primaryActionColor;
+      
+      const ctaButtons = [
+        document.getElementById('cta-work'),
+        document.getElementById('cta-resume'),
+        document.getElementById('cta-connect')
+      ];
+      ctaButtons.forEach(btn => {
+        btn.style.backgroundColor = primaryActionColor;
+        btn.style.color = bgColor;
+      });
+      
+      const statCards = document.querySelectorAll('.stat-card');
+      statCards.forEach(card => {
+        card.style.backgroundColor = `${primaryActionColor}22`;
+        card.style.color = primaryActionColor;
+      });
+      
+      document.getElementById('about').style.backgroundColor = surfaceColor;
+      document.getElementById('about').style.color = textColor;
+      
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.style.backgroundColor = secondaryActionColor;
+        card.style.color = textColor;
+        card.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+      });
+      
+      document.getElementById('experience').style.backgroundColor = adjustColor(surfaceColor, -3);
+      document.getElementById('experience').style.color = textColor;
+      
+      document.getElementById('expertise').style.backgroundColor = surfaceColor;
+      document.getElementById('expertise').style.color = textColor;
+      
+      document.getElementById('testimonials').style.backgroundColor = adjustColor(surfaceColor, -3);
+      document.getElementById('testimonials').style.color = textColor;
+      
+      const skillFills = document.querySelectorAll('.skill-fill');
+      skillFills.forEach(fill => {
+        fill.style.background = `linear-gradient(90deg, ${bgColor} 0%, ${adjustColor(bgColor, -20)} 100%)`;
+      });
+      
+      const skillTabs = document.querySelectorAll('.skill-tab');
+      skillTabs.forEach(tab => {
+        if (tab.classList.contains('active')) {
+          tab.style.background = `linear-gradient(135deg, ${bgColor} 0%, ${adjustColor(bgColor, -20)} 100%)`;
+          tab.style.color = primaryActionColor;
+        } else {
+          tab.style.background = secondaryActionColor;
+          tab.style.color = textColor;
+        }
+      });
+      
+      const toolBadges = document.querySelectorAll('.tool-badge');
+      toolBadges.forEach(badge => {
+        badge.style.backgroundColor = `${bgColor}1a`;
+        badge.style.color = textColor;
+      });
+      
+      document.getElementById('services').style.backgroundColor = adjustColor(surfaceColor, -3);
+      document.getElementById('services').style.color = textColor;
+      
+      document.getElementById('contact').style.backgroundColor = surfaceColor;
+      document.getElementById('contact').style.color = textColor;
+      
+      const contactInputs = document.querySelectorAll('.contact-input');
+      contactInputs.forEach(input => {
+        input.style.borderColor = `${textColor}1a`;
+        input.style.color = textColor;
+      });
+      
+      document.getElementById('submit-btn').style.backgroundColor = bgColor;
+      document.getElementById('submit-btn').style.color = primaryActionColor;
+      
+      const socialBtns = document.querySelectorAll('.social-btn');
+      socialBtns.forEach(btn => {
+        btn.style.backgroundColor = `${bgColor}1a`;
+      });
+      
+      document.getElementById('footer').style.backgroundColor = adjustColor(surfaceColor, -5);
+      document.getElementById('footer').style.color = textColor;
+      
+      const footerBtn = document.querySelector('#footer .btn');
+      footerBtn.style.backgroundColor = bgColor;
+      footerBtn.style.color = primaryActionColor;
+      
+      const resumeBtn = document.querySelector('#about .btn');
+      resumeBtn.style.backgroundColor = bgColor;
+      resumeBtn.style.color = primaryActionColor;
+      
+      const resumeDownloadBtn = document.querySelector('#contact .card:last-child .btn');
+      resumeDownloadBtn.style.backgroundColor = bgColor;
+      resumeDownloadBtn.style.color = primaryActionColor;
+      
+      const links = document.querySelectorAll('nav a');
+      links.forEach(link => {
+        link.style.color = textColor;
+      });
+
+      // Apply fonts
+      const baseFontStack = 'system-ui, -apple-system, sans-serif';
+      document.body.style.fontFamily = `${fontFamily}, ${baseFontStack}`;
+      
+      // Apply font sizes
+      document.getElementById('nav-name').style.fontSize = `${fontSize * 1.25}px`;
+      document.getElementById('greeting').style.fontSize = `${fontSize * 1.125}px`;
+      document.getElementById('title').style.fontSize = `${fontSize * 3.5}px`;
+      document.getElementById('tagline').style.fontSize = `${fontSize * 2.25}px`;
+      document.getElementById('hero-description').style.fontSize = `${fontSize * 1.25}px`;
+      
+      links.forEach(link => {
+        link.style.fontSize = `${fontSize}px`;
+      });
+    }
+
+    function adjustColor(hex, percent) {
+      const num = parseInt(hex.replace('#', ''), 16);
+      const r = Math.max(0, Math.min(255, (num >> 16) + percent));
+      const g = Math.max(0, Math.min(255, ((num >> 8) & 0x00FF) + percent));
+      const b = Math.max(0, Math.min(255, (num & 0x0000FF) + percent));
+      return '#' + ((r << 16) | (g << 8) | b).toString(16).padStart(6, '0');
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => {
+              config.surface_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ surface_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => {
+              config.primary_action_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ primary_action_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+            set: (value) => {
+              config.secondary_action_color = value;
+              if (window.elementSdk) {
+                window.elementSdk.setConfig({ secondary_action_color: value });
+              }
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            if (window.elementSdk) {
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map();
+    }
+
+    // Initialize SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections for scroll animations
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.add('scroll-animate');
+        observer.observe(section);
+      });
+    });
+
+    // Navbar scroll effect
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      const nav = document.getElementById('nav');
+      
+      if (currentScroll > 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      
+      lastScroll = currentScroll;
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Skill tabs functionality
+    const tabButtons = {
+      'tab-digital': 'skills-digital',
+      'tab-business': 'skills-business',
+      'tab-tools': 'skills-tools'
+    };
+
+    Object.keys(tabButtons).forEach(tabId => {
+      document.getElementById(tabId).addEventListener('click', function() {
+        // Hide all content
+        Object.values(tabButtons).forEach(contentId => {
+          document.getElementById(contentId).classList.add('hidden');
+        });
+        
+        // Remove active from all tabs
+        Object.keys(tabButtons).forEach(btnId => {
+          document.getElementById(btnId).classList.remove('active');
+        });
+        
+        // Show selected content and activate tab
+        document.getElementById(tabButtons[tabId]).classList.remove('hidden');
+        this.classList.add('active');
+        
+        // Reapply colors
+        if (window.elementSdk && window.elementSdk.config) {
+          onConfigChange(window.elementSdk.config);
+        }
+      });
+    });
+
+    // Contact form submission
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      showMessage('✉️ Thank you for your message! I\'ll get back to you within 24 hours.');
+      this.reset();
+    });
+
+    // Button interactions
+    document.getElementById('cta-work').addEventListener('click', () => {
+      document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('cta-resume').addEventListener('click', () => {
+      showMessage('📄 Resume download feature - Connect this to your actual resume file!');
+    });
+
+    document.getElementById('cta-connect').addEventListener('click', () => {
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.querySelector('#about .btn').addEventListener('click', () => {
+      showMessage('📄 Resume download feature - Connect this to your actual resume file!');
+    });
+
+    document.querySelector('#footer .btn').addEventListener('click', () => {
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.querySelector('#contact .card:last-child .btn').addEventListener('click', () => {
+      showMessage('📄 Resume download feature - Connect this to your actual resume file!');
+    });
+
+    document.querySelectorAll('.social-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        showMessage('🔗 Connect your social media profiles here!');
+      });
+    });
+
+    function showMessage(text) {
+      const message = document.createElement('div');
+      message.textContent = text;
+      message.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        color: #1a202c;
+        padding: 24px 48px;
+        border-radius: 12px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        font-size: 18px;
+        font-weight: 600;
+        z-index: 1000;
+        max-width: 90%;
+        text-align: center;
+      `;
+      
+      const backdrop = document.createElement('div');
+      backdrop.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      `;
+      
+      document.body.appendChild(backdrop);
+      document.body.appendChild(message);
+      
+      const closeModal = () => {
+        message.remove();
+        backdrop.remove();
+      };
+      
+      backdrop.addEventListener('click', closeModal);
+      setTimeout(closeModal, 3000);
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99cff467515c0d2d',t:'MTc2Mjg4NjgxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
